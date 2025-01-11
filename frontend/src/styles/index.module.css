@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+section {
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    font-family: "Roboto", serif;
+    min-height: 100vh;
+}
+
+h1,
+p,
+input,
+button,
+label,
+a,
+div,
+textarea {
+    color: var(--default-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+a:hover {
+    color: var(--secondary-darker);
+}
+
+button:hover {
+    cursor: pointer;
+}

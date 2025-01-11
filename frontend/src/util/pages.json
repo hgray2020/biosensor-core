@@ -1,0 +1,22 @@
+{
+    "pages": [{
+        "title": "About",
+        "url": "about",
+        "subpages": [
+            { "title": "About Us", "url": "about" },
+            { "title": "History", "url": "history" }
+        ]
+    }, {
+        "title": "People",
+        "url": "people",
+        "subpages": []
+    }, {
+        "title": "Rates",
+        "url": "rates",
+        "subpages": []
+    }, {
+        "title": "Contact Us",
+        "url": "contact",
+        "subpages": []
+    }]
+}
