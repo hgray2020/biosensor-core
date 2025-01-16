@@ -6,7 +6,7 @@ import '../styles/Navbar.css';
 import Pages from '../util/pages.json';
 
 
-function HeaderNavbar({current_page}) {
+function HeaderNavbar() {
     
 
     return (
@@ -16,9 +16,9 @@ function HeaderNavbar({current_page}) {
             <Navbar.Collapse id="basic-navbar-nav" placement="middle">
                 <Nav className="d-flex justify-content-evenly">
                     {Pages.pages.map((item) => {
-                        if (!current_page || item.title !== current_page.title) {
-                            return <NavbarButton page={item}/>
-                        }
+                        
+                        return <NavbarButton key={item.url} page={item}/>
+                        
                     })}
                     
                     

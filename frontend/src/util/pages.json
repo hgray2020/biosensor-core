@@ -2,17 +2,26 @@
     "pages": [{
         "title": "About",
         "url": "about",
-        "subpages": [
-            { "title": "About Us", "url": "about" },
-            { "title": "History", "url": "history" }
-        ]
+        "subpages": []
     }, {
         "title": "People",
         "url": "people",
         "subpages": []
     }, {
-        "title": "Rates",
+        "title": "Rates & Services",
         "url": "rates",
+        "subpages": []
+    }, {
+        "title": "Biosensor Collection",
+        "url": "collections",
+        "subpages": []
+    }, {
+        "title": "Database Links",
+        "url": "Links",
+        "subpages": []
+    }, {
+        "title": "Gallery",
+        "url": "gallery",
         "subpages": []
     }, {
         "title": "Contact Us",

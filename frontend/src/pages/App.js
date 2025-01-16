@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
+import DefaultPage from "./DefaultPage";
+import Pages from "../util/pages.json";
 
 function App() {
     
@@ -8,7 +10,10 @@ function App() {
             
             <Routes>
                 
-                <Route path="/" element={<Home />} />
+                <Route key={"/"} path="/" element={<Home />} />
+                {Pages.pages.map((page) => (
+                    <Route key={page.url} path={`/${page.url}`} element={<DefaultPage page={page}/>}/>
+                ))}
                
             </Routes>
             {/* </div> */}
