@@ -12,7 +12,7 @@ function People() {
     const boxes = PeopleJSON.people.map((person) => {return {
         header: person.name,
         text: person.bio,
-        img: `people/People_${nameToImageFilePath(person.name)}.jpg`,
+        img: `People_${nameToImageFilePath(person.name)}.jpg`,
         short: true
     }})
 
