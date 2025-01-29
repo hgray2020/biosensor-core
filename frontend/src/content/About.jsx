@@ -1,26 +1,13 @@
-import ContentBoxGroup from "../components/ContentBoxGroup"
-
+import styles from "../styles/Home.module.css";
 
 function About() {
-    const content = [
-        {
-            header: "About",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Pellentesque ridiculus hendrerit justo consequat odio sapien fusce. Proin facilisi dictum parturient accumsan suscipit ipsum. Libero quis urna odio; molestie magna efficitur. Felis malesuada quam at mauris lacus imperdiet luctus. Pretium fusce fringilla vestibulum donec fames. Senectus massa risus leo bibendum vitae. Posuere pellentesque curabitur primis venenatis natoque. Nisl dapibus placerat quis blandit urna taciti. Molestie non suscipit leo platea penatibus. Elementum aliquet proin litora velit mus lacus conubia.",
-            img: "tmp.jfif"
-        },
-        {
-            header: "About",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            img: "tmp.jfif"
-        },
-        {
-            header: "About",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            img: "tmp.jfif"
-        }
-    ];
 
-    return <ContentBoxGroup contentBoxes={content}/>
+    return <>
+        <div className={styles.content_section}>
+            <h2>About Us</h2>
+            <p>The UCSD Biosensor Core, inspired by Roger Tsien's pioneering work, provides support for the use and development of genetically encoded biosensors, including fluorescent and bioluminescent indicators and optogenetic tools. These technologies allow for precise visualization and control of dynamic cellular processes, but their effective application often requires specialized expertise. Our core offers consultation on biosensor selection, imaging protocols, and experimental design, maintains a repository of validated biosensors, and assists with custom biosensor design and optimization. In collaboration with UCSD microscopy facilities, we also provide training in quantitative imaging techniques and data analysis. By addressing technical challenges and sharing expertise, the core aims to enable researchers from diverse fields to integrate biosensors into their work with greater ease and rigor.</p>
+        </div>
+    </>
 }
 
 export default About;

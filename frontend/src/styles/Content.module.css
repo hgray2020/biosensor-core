@@ -8,4 +8,20 @@
 
 .content_main {
     min-height: 80vh;
+    padding: 5% 0%;
+}
+
+.content_section {
+    padding: 0% 10%;
+    display: flex;
+    width: 100%;
+}
+
+.content_default {
+    padding: 5%;
+}
+
+.content_link {
+    color: --navy-blue;
+    text-decoration: underline;
 }

@@ -9,7 +9,7 @@ function Footer() {
                     <img className={styles.infobar_logo} src="images/ucsd-logo-white.png"/>
                 </a>
                 </div>
-                <div className={styles.infobar_text}>9500 Gilman Drive, La Jolla, CA 92093-0112</div>
+                <div className={styles.infobar_text}>9515 Gilman Drive, La Jolla, CA 92093</div>
                 <div className={styles.infobar_text}>(858) 822-4007</div>
             </div>
 

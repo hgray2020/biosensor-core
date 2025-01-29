@@ -23,7 +23,7 @@
 }
 
 .footer_main_container {
-    background-color: rgb(var(--bs-primary-rgb));
+    background-color: var(--navy-blue);
     padding: 2em 3em 5em 3em;
     display: flex;
     flex-direction: row;
