@@ -3,7 +3,7 @@
     font-weight: 700;
     background-color: var(--light-blue);
     color: white;
-    padding: 1em 3em;
+    padding: 1rem 3rem;
 }
 
 .content_main {
@@ -18,10 +18,16 @@
 }
 
 .content_default {
-    padding: 5%;
+    padding: 0% 5%;
 }
 
 .content_link {
     color: --navy-blue;
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .content_header {
+        font-size: 20px;
+    }
 }

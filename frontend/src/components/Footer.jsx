@@ -15,12 +15,11 @@ function Footer() {
 
             <div className={styles.footer_main_container}>
                 <div className={styles.footer_table_container}>
-                    <table>
+                    <table className={styles.footer_table}>
                         <thead>
                             <tr>
                                 <th>MENU</th>
                                 <th>QUICK LINKS</th>
-                                <th>SOCIAL MEDIA</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -30,11 +29,6 @@ function Footer() {
                                 </td>
                                 <td>
                                     <a className={styles.footer_link} href="/contact">Contact</a>
-                                </td>
-                                <td>
-                                    <a className={styles.footer_link} href="https://x.com" target="_blank" aria-label="Twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
                                 </td>
                                 
                                 

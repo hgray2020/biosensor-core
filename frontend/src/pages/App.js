@@ -1,7 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import DefaultPage from "./DefaultPage";
-import Pages from "../util/pages.json";
+import About from "src/content/About";
+import Resources from "src/content/Resources";
+import People from "src/content/People";
+import Rates from "src/content/Rates";
+import Contact from "src/content/Contact";
+import Collections from "src/content/Collections";
 
 function App() {
     
@@ -10,10 +15,16 @@ function App() {
             
             <Routes>
                 
-                <Route key={"/"} path="/" element={<Home />} />
-                {Pages.pages.map((page) => (
-                    <Route key={page.url} path={`/${page.url}`} element={<DefaultPage page={page}/>}/>
-                ))}
+                <Route key={"/"} path="/" element={<DefaultPage />}>
+                    <Route path="/" element={<Home />}/>
+                    <Route path="/about" element={<About />} />
+                    <Route path="/collections" element={<Collections />} />
+                    <Route path="/people" element={<People />} />
+                    <Route path="/rates" element={<Rates />} />
+                    <Route path="/resources" element={<Resources />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Route>
+                
                
             </Routes>
             {/* </div> */}

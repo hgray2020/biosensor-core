@@ -1,5 +1,5 @@
 import ContentBoxGroup from "../components/ContentBoxGroup";
-
+import styles from "../styles/Content.module.css";
 import PeopleJSON from '../util/people.json';
 
 function People() {
@@ -16,7 +16,12 @@ function People() {
         short: true
     }})
 
-    return <ContentBoxGroup contentBoxes={boxes}/>
+    return (<>
+        <div className={styles.content_header}>People</div>
+        <div className={styles.content_main}>
+            <ContentBoxGroup contentBoxes={boxes}/>
+        </div>
+    </>);
 }
 
 export default People;
