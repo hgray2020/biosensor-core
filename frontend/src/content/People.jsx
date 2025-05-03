@@ -20,6 +20,19 @@ function People() {
         <div className={styles.content_header}>People</div>
         <div className={styles.content_main}>
             <ContentBoxGroup contentBoxes={boxes}/>
+            <div className={styles.advisory_board}>
+                <h2>Advisory Board</h2>
+                {PeopleJSON.advisory_board.map((person => (
+                    <>
+                        <h3>
+                            {person.name}
+                        </h3>
+                        <p>
+                            {person.bio}
+                        </p>
+                    </>
+                )))}
+            </div>
         </div>
     </>);
 }

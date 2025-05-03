@@ -48,6 +48,23 @@
     height: 215px;
 }
 
+.advisory_board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 25%;
+    text-align: center;
+}
+
+.advisory_board p {
+    padding-bottom: 5%;
+}
+
+.advisory_board h2 {
+    padding-bottom: 5%;
+}
+
 @media (max-width: 800px) {
     .content_header {
         font-size: 20px;
@@ -62,5 +79,14 @@
     .video_gallery {
         gap: 30px;
         padding: 5%;
+    }
+    .advisory_board {
+        padding: 0% 10%;
+    }
+    .advisory_board p {
+        padding-bottom: 15%;
+    }
+    .advisory_board h2 {
+        padding-bottom: 15%;
     }
 }
